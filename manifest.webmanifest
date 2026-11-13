@@ -1,0 +1,12 @@
+{
+  "name": "Binance Futures TradingView Pro",
+  "short_name": "Futures Pro",
+  "description": "TradingView-style Binance Futures charting web app",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#131722",
+  "theme_color": "#131722",
+  "icons": []
+}

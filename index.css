@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --tv-bg: #131722;
+    --tv-panel: #1e222d;
+    --tv-surface: #2a2e39;
+    --tv-border: #2b2f3a;
+    --tv-text: #d1d4dc;
+    --tv-muted: #787b86;
+    --tv-green: #089981;
+    --tv-red: #f23645;
+    --tv-blue: #2962ff;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #131722;
+    color: #d1d4dc;
+    font-family: -apple-system, BlinkMacSystemFont, "Trebuchet MS", Roboto, Ubuntu, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+/* Custom scrollbars matching TradingView */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131722;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2e39;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #363a45;
+}
+
+/* Prevent canvas selection and callouts on mobile touch */
+canvas {
+  touch-action: none;
+}
